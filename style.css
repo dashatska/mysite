@@ -1,0 +1,251 @@
+/* Общие стили для всей страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Стили для тела страницы */
+body {
+    font-family: 'Arial', sans-serif; /* Шрифт по умолчанию */
+    line-height: 1.6; /* Межстрочный интервал */
+    color: #333; /* Цвет текста */
+    background-image: url("fon.jpg");
+}
+
+/* Стили для навигационной панели */
+.navbar {
+    background-color: #f8bbd0; /* Розовый цвет фона */
+    padding: 1rem 0; /* Отступы сверху и снизу */
+    position: sticky; /* Панель будет прилипать при прокрутке */
+    top: 0; /* Прилипание к верху страницы */
+    z-index: 100; /* Чтобы панель была поверх других элементов */
+}
+
+.nav-container {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центр контейнера */
+    padding: 0 20px; /* Отступы слева и справа */
+    display: flex; /* Используем flexbox для расположения элементов */
+    justify-content: space-between; /* Распределяем элементы по ширине */
+    align-items: center; /* Выравниваем по центру по вертикали */
+}
+
+.nav-logo {
+    font-size: 1.5rem; /* Размер шрифта для логотипа */
+    font-weight: bold; /* Жирный шрифт */
+    color: #333; /* Цвет текста */
+}
+
+.nav-menu {
+    display: flex; /* Используем flexbox для меню */
+    list-style: none; /* Убираем маркеры списка */
+}
+
+.nav-menu li {
+    margin-left: 1.5rem; /* Отступ слева для каждого пункта меню */
+}
+
+.nav-menu a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #333; /* Цвет текста ссылок */
+    font-weight: 500; /* Полужирный шрифт */
+    transition: color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+/* Эффект при наведении на ссылки в меню */
+.nav-menu a:hover {
+    color: #e91e63; /* Изменяем цвет при наведении */
+}
+
+/* Стили для шапки сайта */
+.header {
+    background-image:url("sky.jpg");
+    padding: 3rem 0; /* Отступы сверху и снизу */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.header-container {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px; /* Отступы слева и справа */
+}
+
+.avatar {
+    width: 150px; /* Ширина аватара */
+    height: 150px; /* Высота аватара */
+    border-radius: 50%; /* Делаем аватар круглым */
+    object-fit: cover; /* Сохраняем пропорции изображения */
+    margin-bottom: 1rem; /* Отступ снизу */
+    border: 3px solid #f8bbd0; /* Розовая рамка вокруг аватара */
+}
+
+.header h1 {
+    margin-bottom: 1rem; /* Отступ снизу для заголовка */
+    color: #333; /* Цвет текста */
+}
+
+.header p {
+    margin-bottom: 1rem; /* Отступ снизу для параграфов */
+    color: #555; /* Цвет текста */
+}
+
+/* Стили для основного содержимого */
+.main-content {
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 2rem 20px; /* Отступы сверху/снизу и слева/справа */
+}
+
+/* Стили для разделов */
+.section {
+    margin-bottom: 3rem; /* Отступ снизу между разделами */
+}
+
+.section h2 {
+    margin-bottom: 1.5rem; /* Отступ снизу для заголовков разделов */
+    color: #e91e63; /* Розовый цвет для заголовков */
+    border-bottom: 2px solid #e3f2fd; /* Голубая линия под заголовком */
+    padding-bottom: 0.5rem; /* Отступ снизу для заголовка */
+}
+
+/* Стили для раздела "Обо мне" */
+.about-content {
+    display: flex; /* Используем flexbox для расположения элементов */
+    flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+    gap: 2rem; /* Расстояние между элементами */
+}
+
+.about-text {
+    flex: 1; /* Занимает доступное пространство */
+    min-width: 300px; /* Минимальная ширина */
+}
+
+.about-text p {
+    margin-bottom: 1rem; /* Отступ снизу для параграфов */
+}
+
+.about-photo {
+    flex: 1; /* Занимает доступное пространство */
+    min-width: 300px; /* Минимальная ширина */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.about-photo img {
+    max-width: 100%; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота */
+    border-radius: 8px; /* Скругленные углы */
+}
+
+/* Стили для раздела "Интересы" */
+.interests-container {
+    display: flex; /* Используем flexbox для расположения изображения и карточек */
+    gap: 2rem; /* Расстояние между изображением и карточками */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+}
+
+.interests-image {
+    flex: 1; /* Занимает доступное пространство */
+    min-width: 300px; /* Минимальная ширина */
+    text-align: center; /* Выравнивание по центру */
+}
+
+.interests-image img {
+    max-width: 100%; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Тень изображения */
+}
+
+.interests-grid {
+    flex: 2; /* Занимает в два раза больше места, чем изображение */
+    display: grid; /* Используем CSS Grid для расположения карточек */
+    grid-template-columns: repeat(2, 1fr); /* Две колонки одинаковой ширины */
+    gap: 1.5rem; /* Расстояние между карточками */
+}
+
+.interest-card {
+    background-color: #f9f9f9; /* Светло-серый фон карточки */
+    padding: 1.5rem; /* Внутренние отступы */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Тень карточки */
+    transition: transform 0.3s; /* Плавный переход для эффекта наведения */
+}
+
+/* Эффект при наведении на карточку интереса */
+.interest-card:hover {
+    transform: translateY(-5px); /* Поднимаем карточку при наведении */
+}
+
+.interest-card h3 {
+    margin-bottom: 1rem; /* Отступ снизу для заголовка карточки */
+    color: #2196f3; /* Голубой цвет для заголовков карточек */
+}
+
+.interest-card p {
+    margin-bottom: 1rem; /* Отступ снизу для текста карточки */
+}
+
+.interest-link {
+    display: inline-block; /* Отображаем как блочный элемент */
+    color: #e91e63; /* Розовый цвет для ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: 500; /* Полужирный шрифт */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+
+/* Эффект при наведении на ссылку интереса */
+.interest-link:hover {
+    color: #c2185b; /* Более темный розовый при наведении */
+}
+
+/* Стили для подвала сайта */
+.footer {
+    background-color: #f8bbd0; /* Розовый цвет фона */
+    padding: 2rem 0; /* Отступы сверху и снизу */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.footer-container {
+    max-width: 800px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 20px; /* Отступы слева и справа */
+}
+
+.footer h2 {
+    margin-bottom: 1rem; /* Отступ снизу для заголовка */
+    color: #333; /* Цвет текста */
+}
+
+.footer p {
+    margin-bottom: 1rem; /* Отступ снизу для параграфов */
+    color: #555; /* Цвет текста */
+}
+
+.social-links {
+    display: flex; /* Используем flexbox для расположения ссылок */
+    justify-content: center; /* Выравниваем по центру */
+    gap: 1.5rem; /* Расстояние между ссылками */
+    margin-bottom: 1.5rem; /* Отступ снизу */
+}
+
+.social-link {
+    display: inline-block; /* Отображаем как блочный элемент */
+    padding: 0.5rem 1rem; /* Внутренние отступы */
+    background-color: #e3f2fd; /* Голубой фон для ссылок */
+    color: #333; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 4px; /* Скругленные углы */
+    transition: all 0.3s; /* Плавный переход для всех свойств */
+}
+
+/* Эффект при наведении на социальные ссылки */
+.social-link:hover {
+    background-color: #2196f3; /* Голубой фон при наведении */
+    color: white; /* Белый текст при наведении */
+    transform: scale(1.05); /* Увеличиваем немного размер */
+}
+
+
+
